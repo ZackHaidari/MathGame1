@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Test Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Math Test Game</h1>
+    <label for="operation">Select operation:</label>
+    <select id="operation" onchange="changeOperation()">
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+    </select>
+    <div id="question"></div>
+    <input type="number" id="answerInput" placeholder="Your answer">
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
